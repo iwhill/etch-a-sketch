@@ -1,0 +1,44 @@
+#grid-container {
+    border: solid;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    height: 80vh;
+    width: 80vh;
+}
+
+.square-properties {
+    background-color: white;
+}
+
+.square-properties-hover {
+    background-color: black;
+}
+
+.button-container {
+    height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.button-position {
+    display: flex;
+    align-items: center;
+}
+
+.clear-button {
+    height: 20px;
+    width: 80px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+}
+
