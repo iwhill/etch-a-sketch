@@ -1,9 +1,5 @@
-function displayGrid () {
-  const body = document.querySelector('body')
-  const gridContainer = document.createElement('div')
-  gridContainer.setAttribute('class', 'grid-container');
-  body.appendChild(gridContainer); 
-
+function createGrid () {
+  const gridContainer = document.querySelector('.grid-container');
   const gridTiles = [];
 
   for (let i = 0; i < 16; i++) {
