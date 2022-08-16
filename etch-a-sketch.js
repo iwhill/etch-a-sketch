@@ -45,7 +45,9 @@ function getGridSize() {
     return;
   }
 
-  while (gridSize < 1 || gridSize > 100) {
+  gridSize = gridSize * 1;
+
+  while (gridSize < 1 || gridSize > 100 || isNaN(gridSize)) {
     gridSize = prompt('Invalid grid size. Please enter a size between 1 and 100 (inclusive)');
 
     if (gridSize === null) {
@@ -53,7 +55,7 @@ function getGridSize() {
     }
   }
 
-  return (Math.round(gridSize * 1));
+  return (Math.round(gridSize));
 }
 
 //Adds click event listener to 'Grid Size' button which sets up grid for drawing
