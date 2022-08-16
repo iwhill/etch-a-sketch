@@ -1,0 +1,17 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.grid-container {
+  border-style: solid;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  display: grid;
+}
+
+.grid-tile-filled {
+  background-color: black;
+}
